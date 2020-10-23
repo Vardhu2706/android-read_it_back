@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:background="#0c7b93"
+        android:background="#4fa3a5"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal">
@@ -14,7 +14,7 @@
             android:id="@+id/back_image_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#0c7b93"
+            android:backgroundTint="#4fa3a5"
             android:src="@drawable/back"
             android:tint="#fff"
             android:paddingLeft="20dp"

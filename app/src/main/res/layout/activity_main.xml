@@ -8,8 +8,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:background="#0c7b93"
-        android:onClick="open_module"
+        android:background="#4fa3a5"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal">
@@ -36,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/settings"
-            android:backgroundTint="#0c7b93" />
+            android:backgroundTint="#4fa3a5" />
 
 
     </LinearLayout>
