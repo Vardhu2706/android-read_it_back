@@ -20,8 +20,7 @@ public class MainActivity extends AppCompatActivity {
         settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                open_settings();
-                open_module();
+                open_settings();
             }
         });
     }
