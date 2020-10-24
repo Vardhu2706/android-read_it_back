@@ -2,24 +2,28 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:background="#fff"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <LinearLayout
-        android:background="#0f3057"
-        android:padding="10dp"
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal">
 
         <ImageButton
-            android:tint="#fff"
-            android:layout_gravity="center"
-            android:id="@+id/edit_button"
+            android:id="@+id/back_image_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/back"
-            android:backgroundTint="#0f3057" />
+            android:backgroundTint="#fff"
+            android:src="@drawable/ic_ic24_arrow_left"
+            android:tint="#000"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="center"
+            />
+
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -29,10 +33,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Options"
-            android:textSize="24sp"
-            android:textColor="#fff"
+            android:fontFamily="@font/cm"
+            android:textSize="22sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#000"
             android:layout_gravity="center"
             />
+
+
 
     </LinearLayout>
 

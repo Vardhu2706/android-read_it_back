@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton settings;
+    private ImageButton settings;
+    private LinearLayout main_content;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +23,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 open_settings();
+            }
+        });
+
+        main_content = (LinearLayout) findViewById(R.id.main_content_ll);
+        main_content.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                open_module();
             }
         });
     }

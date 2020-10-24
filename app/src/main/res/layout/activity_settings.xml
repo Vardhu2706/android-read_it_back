@@ -2,44 +2,63 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:background="#4fa3a5"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
 
         <ImageButton
             android:id="@+id/back_image_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#4fa3a5"
-            android:src="@drawable/back"
-            android:tint="#fff"
+            android:layout_gravity="center"
+            android:backgroundTint="#fff"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:layout_gravity="center"
-            />
+            android:src="@drawable/ic_ic24_arrow_left" />
+
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
 
         <TextView
-            android:gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Settings"
-            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/cm"
+            android:gravity="center"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:textColor="#fff"
-            android:layout_gravity="center"
-            />
+            android:text="Settings"
+            android:textColor="#000"
+            android:textSize="22sp" />
 
 
     </LinearLayout>
 
+    <LinearLayout
+        android:background="@drawable/red_shadow"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/yellow_shadow"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+    </LinearLayout>
 </LinearLayout>

@@ -4,13 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
+    android:background="#fff"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:background="#4fa3a5"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:gravity="center"
         android:orientation="horizontal">
         <TextView
             android:paddingLeft="20dp"
@@ -18,8 +18,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Read It Back"
+            android:fontFamily="@font/cm"
             android:textSize="24sp"
-            android:textColor="#fff"
+            android:textColor="#000"
             android:layout_gravity="center"
             />
         <View
@@ -27,19 +28,25 @@
             android:layout_height="0dp"
             android:layout_weight="1"/>
         <ImageButton
-            android:tint="#fff"
+            android:tint="#000"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:layout_gravity="center"
             android:id="@+id/settings_image_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/settings"
-            android:backgroundTint="#4fa3a5" />
+            android:src="@drawable/ic_ic24_settings"
+            android:backgroundTint="#fff" />
 
 
     </LinearLayout>
+    <LinearLayout
+        android:id="@+id/main_content_ll"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+    </LinearLayout>
 
 
 </LinearLayout>
