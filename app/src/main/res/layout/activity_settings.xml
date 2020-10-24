@@ -43,22 +43,267 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:background="@drawable/red_shadow"
-        android:layout_margin="10dp"
-        android:orientation="vertical"
+
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="200dp">
+        android:layout_height="match_parent">
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
 
-    <LinearLayout
-        android:background="@drawable/yellow_shadow"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="200dp">
+            <LinearLayout
+                android:background="@drawable/red_shadow"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    </LinearLayout>
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:textSize="20sp"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/cm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="General"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_margin="16dp"
+                        android:layout_height="wrap_content">
+
+                        <Switch
+                            android:fontFamily="@font/cm"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:id="@+id/switch1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Dark Theme" />
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:background="@drawable/white_shadow"
+                        android:fontFamily="@font/cm"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Reset Progress"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/yellow_shadow"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/cm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Module"
+                    android:textSize="20sp"
+                    android:textColor="#fff"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="16dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginTop="16dp"
+                            android:layout_width="match_parent"
+                            android:text="Pitch"
+                            android:layout_marginBottom="16dp"
+                            android:fontFamily="@font/cm"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:layout_height="wrap_content"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_marginTop="16dp"
+                            android:layout_width="match_parent"
+                            android:text="0.6"
+                            android:layout_marginBottom="16dp"
+                            android:fontFamily="@font/cm"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                    <SeekBar
+
+                        android:id="@+id/pitch_seekBar"
+                        style="@style/Widget.AppCompat.SeekBar.Discrete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="10"
+                        android:progress="3" />
+
+                    <TextView
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:text="Speed"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/cm"
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+                        android:layout_height="wrap_content"/>
+
+                    <SeekBar
+                        android:id="@+id/speed_seekbar"
+                        style="@style/Widget.AppCompat.SeekBar.Discrete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="10"
+                        android:progress="3" />
+
+                    <TextView
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:text="Font Size"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/cm"
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <SeekBar
+                            android:id="@+id/fontsize_seekbar"
+                            style="@style/Widget.AppCompat.SeekBar.Discrete"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:max="2"
+                            android:progress="1" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/gray_shadow"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:textSize="20sp"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/cm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="App Info"/>
+
+                <LinearLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:text="Version"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/cm"
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:text="1.0"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/cm"
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:background="@drawable/white_shadow"
+                    android:fontFamily="@font/cm"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_margin="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Rate App"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
 </LinearLayout>
