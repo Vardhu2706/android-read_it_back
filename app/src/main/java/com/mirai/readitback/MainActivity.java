@@ -1,6 +1,7 @@
 package com.mirai.readitback;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ImageButton settings;
     private LinearLayout main_content;
+    private RecyclerView content_view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 open_settings();
             }
         });
+        content_view = (RecyclerView) findViewById(R.id.content_recyclerview);
 
         main_content = (LinearLayout) findViewById(R.id.main_content_ll);
         main_content.setOnClickListener(new View.OnClickListener() {
