@@ -167,9 +167,11 @@
                             android:id="@+id/radioButton"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+
                             android:text="Male" />
 
                         <RadioButton
+
                             android:layout_weight="1"
                             android:textSize="18sp"
                             android:textColor="#fff"
@@ -303,6 +305,18 @@
                     android:textSize="18sp"
                     android:gravity="center"
                     android:layout_margin="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Contact Developer"/>
+
+                <Button
+                    android:background="@drawable/white_shadow"
+                    android:fontFamily="@font/cm"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:text="Rate App"/>
