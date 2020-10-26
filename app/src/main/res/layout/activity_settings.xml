@@ -141,47 +141,44 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginBottom="16dp">
 
-                    <LinearLayout
-                        android:orientation="horizontal"
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:layout_marginTop="16dp"
-                            android:layout_width="match_parent"
-                            android:text="Pitch"
-                            android:layout_marginBottom="16dp"
-                            android:fontFamily="@font/cm"
-                            android:textColor="#fff"
-                            android:textSize="18sp"
-                            android:layout_height="wrap_content"/>
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"/>
-
-                        <TextView
-                            android:layout_marginTop="16dp"
-                            android:layout_width="match_parent"
-                            android:text="0.6"
-                            android:layout_marginBottom="16dp"
-                            android:fontFamily="@font/cm"
-                            android:textColor="#fff"
-                            android:textSize="18sp"
-                            android:layout_height="wrap_content"/>
-
-                    </LinearLayout>
-
-
-                    <SeekBar
-
-                        android:id="@+id/pitch_seekBar"
-                        style="@style/Widget.AppCompat.SeekBar.Discrete"
-                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:max="10"
-                        android:progress="3" />
+                        android:text="Voice"
+                        android:layout_marginTop="16dp"
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/cm"/>
+
+
+                    <RadioGroup
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+
+                        <RadioButton
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:textSize="18sp"
+                            android:textColor="#fff"
+                            android:fontFamily="@font/cm"
+                            android:id="@+id/radioButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Male" />
+
+                        <RadioButton
+                            android:layout_weight="1"
+                            android:textSize="18sp"
+                            android:textColor="#fff"
+                            android:fontFamily="@font/cm"
+                            android:id="@+id/radioButton2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Female" />
+                    </RadioGroup>
 
                     <TextView
                         android:layout_marginTop="16dp"
@@ -200,6 +197,16 @@
                         android:layout_height="wrap_content"
                         android:max="10"
                         android:progress="3" />
+
+                    <Button
+                        android:background="@drawable/white_shadow"
+                        android:fontFamily="@font/cm"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_margin="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Test"/>
 
                     <TextView
                         android:layout_marginTop="16dp"
