@@ -60,10 +60,11 @@
             android:layout_height="200dp">
 
             <TextView
+                android:textStyle="bold"
                 android:fontFamily="@font/cm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Speech Settings"
+                android:text="Module Settings"
                 android:textSize="20sp"
                 android:textColor="#fff"
                 />
