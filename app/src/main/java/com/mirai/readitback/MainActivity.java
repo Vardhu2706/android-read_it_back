@@ -12,8 +12,7 @@ import android.widget.LinearLayout;
 public class MainActivity extends AppCompatActivity {
 
     private ImageButton settings;
-    private LinearLayout main_content;
-    private RecyclerView content_view;
+    private LinearLayout phrases_ll, conversations_ll, books_ll;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,10 +26,12 @@ public class MainActivity extends AppCompatActivity {
                 open_settings();
             }
         });
-        content_view = (RecyclerView) findViewById(R.id.content_recyclerview);
 
-        main_content = (LinearLayout) findViewById(R.id.main_content_ll);
-        main_content.setOnClickListener(new View.OnClickListener() {
+        phrases_ll = (LinearLayout) findViewById(R.id.phrases_linear_layout);
+        conversations_ll = (LinearLayout) findViewById(R.id.conversations_linear_layout);
+        books_ll = (LinearLayout) findViewById(R.id.books_linear_layout);
+
+        phrases_ll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 open_module();

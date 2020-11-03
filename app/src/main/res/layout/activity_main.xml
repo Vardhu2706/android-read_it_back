@@ -53,6 +53,8 @@
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:elevation="5dp"
+                    android:id="@+id/phrases_linear_layout"
                     android:layout_weight="1"
                     android:padding="10dp"
                     android:layout_margin="10dp"
@@ -72,6 +74,8 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:elevation="5dp"
+                    android:id="@+id/conversations_linear_layout"
                     android:layout_weight="1"
                     android:padding="10dp"
                     android:layout_marginLeft="10dp"
@@ -93,6 +97,8 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:elevation="5dp"
+                    android:id="@+id/books_linear_layout"
                     android:layout_weight="1"
                     android:padding="10dp"
                     android:layout_marginLeft="10dp"

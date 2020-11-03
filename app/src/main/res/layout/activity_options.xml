@@ -51,7 +51,7 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:background="@drawable/yellow_shadow"
+            android:background="@drawable/button_background"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
             android:padding="10dp"

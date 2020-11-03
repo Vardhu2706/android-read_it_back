@@ -56,59 +56,63 @@
             android:layout_height="match_parent">
 
             <LinearLayout
-                android:background="@drawable/bg_1"
-                android:layout_margin="10dp"
-                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_shadow"
+                android:elevation="5dp"
+                android:orientation="vertical">
 
                 <TextView
-                    android:textStyle="bold"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="16dp"
-                    android:textSize="20sp"
-                    android:textColor="#fff"
-                    android:fontFamily="@font/cm"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="General"/>
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/cm"
+                    android:text="General"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_margin="16dp"
-                        android:layout_height="wrap_content">
+                        android:orientation="horizontal">
 
                         <Switch
-                            android:fontFamily="@font/cm"
-                            android:textColor="#fff"
-                            android:textSize="18sp"
                             android:id="@+id/switch1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Dark Theme" />
+                            android:fontFamily="@font/cm"
+                            android:text="Dark Theme"
+                            android:textColor="#000"
+                            android:textSize="18sp" />
 
 
                     </LinearLayout>
 
                     <Button
-                        android:background="@drawable/white_shadow"
-                        android:fontFamily="@font/cm"
-                        android:textSize="18sp"
-                        android:gravity="center"
-                        android:layout_marginRight="16dp"
-                        android:layout_marginLeft="16dp"
-                        android:layout_marginBottom="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:text="Reset Progress"/>
-
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/button_background"
+                        android:fontFamily="@font/cm"
+                        android:gravity="center"
+                        android:text="Reset Progress"
+                        android:textSize="18sp" />
 
 
                 </LinearLayout>
@@ -116,9 +120,11 @@
             </LinearLayout>
 
             <LinearLayout
-                android:background="@drawable/yellow_shadow"
+                android:elevation="5dp"
+                android:background="@drawable/white_shadow"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginBottom="16dp"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -133,7 +139,7 @@
                     android:layout_height="wrap_content"
                     android:text="Module"
                     android:textSize="20sp"
-                    android:textColor="#fff"
+                    android:textColor="#000"
                     />
 
                 <LinearLayout
@@ -149,7 +155,7 @@
                         android:layout_height="wrap_content"
                         android:text="Voice"
                         android:layout_marginTop="16dp"
-                        android:textColor="#fff"
+                        android:textColor="#000"
                         android:textSize="18sp"
                         android:fontFamily="@font/cm"/>
 
@@ -166,7 +172,7 @@
                             android:layout_weight="1"
                             android:checked="true"
                             android:textSize="18sp"
-                            android:textColor="#fff"
+                            android:textColor="#000"
                             android:fontFamily="@font/cm"
                             android:id="@+id/radioButton"
                             android:layout_width="match_parent"
@@ -178,7 +184,7 @@
 
                             android:layout_weight="1"
                             android:textSize="18sp"
-                            android:textColor="#fff"
+                            android:textColor="#000"
                             android:fontFamily="@font/cm"
                             android:id="@+id/radioButton2"
                             android:layout_width="match_parent"
@@ -192,7 +198,7 @@
                         android:text="Speed"
                         android:layout_marginBottom="16dp"
                         android:fontFamily="@font/cm"
-                        android:textColor="#fff"
+                        android:textColor="#000"
                         android:textSize="18sp"
                         android:layout_height="wrap_content"/>
 
@@ -205,7 +211,7 @@
                         android:progress="3" />
 
                     <Button
-                        android:background="@drawable/white_shadow"
+                        android:background="@drawable/button_background"
                         android:fontFamily="@font/cm"
                         android:textSize="18sp"
                         android:gravity="center"
@@ -220,7 +226,7 @@
                         android:text="Font Size"
                         android:layout_marginBottom="16dp"
                         android:fontFamily="@font/cm"
-                        android:textColor="#fff"
+                        android:textColor="#000"
                         android:textSize="18sp"
                         android:layout_height="wrap_content"/>
 
@@ -250,8 +256,9 @@
             </LinearLayout>
 
             <LinearLayout
-                android:background="@drawable/gray_shadow"
-                android:layout_margin="10dp"
+                android:elevation="5dp"
+                android:background="@drawable/white_shadow"
+                android:layout_marginBottom="16dp"
                 android:orientation="vertical"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
@@ -264,7 +271,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
                     android:textSize="20sp"
-                    android:textColor="#fff"
+                    android:textColor="#000"
                     android:fontFamily="@font/cm"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -283,7 +290,7 @@
                         android:text="Version"
                         android:layout_marginBottom="16dp"
                         android:fontFamily="@font/cm"
-                        android:textColor="#fff"
+                        android:textColor="#000"
                         android:textSize="18sp"
                         android:layout_height="wrap_content"/>
 
@@ -298,14 +305,14 @@
                         android:text="1.0"
                         android:layout_marginBottom="16dp"
                         android:fontFamily="@font/cm"
-                        android:textColor="#fff"
+                        android:textColor="#000"
                         android:textSize="18sp"
                         android:layout_height="wrap_content"/>
 
                 </LinearLayout>
 
                 <Button
-                    android:background="@drawable/white_shadow"
+                    android:background="@drawable/button_background"
                     android:fontFamily="@font/cm"
                     android:textSize="18sp"
                     android:gravity="center"
@@ -315,7 +322,7 @@
                     android:text="Contact Developer"/>
 
                 <Button
-                    android:background="@drawable/white_shadow"
+                    android:background="@drawable/button_background"
                     android:fontFamily="@font/cm"
                     android:textSize="18sp"
                     android:gravity="center"
